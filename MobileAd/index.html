@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mobile Ad</title>
+</head>
+
+<body>
+    <div class="sampleText">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor eros sed ligula varius, non bibendum nunc facilisis. Nulla facilisi. Praesent tristique justo et diam cursus, ut venenatis odio elementum. Duis auctor, 
+            lorem eget suscipit malesuada, tellus sapien tincidunt dolor, non vestibulum risus turpis eu libero. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer eleifend 
+            nulla nec nunc auctor, nec efficitur justo dictum. Vivamus semper laoreet ex, eu feugiat libero. Suspendisse consectetur aliquam mauris a scelerisque. Ut et lacus eu neque tincidunt laoreet id in orci. <br> <br>
+        </p>
+        <p>
+            Integer scelerisque interdum enim eu tincidunt. Curabitur id quam nec tellus malesuada consequat. Curabitur malesuada metus non bibendum aliquam. Donec vestibulum fermentum tellus, nec rhoncus nunc ultricies at. 
+            Aenean interdum diam non neque placerat, a faucibus nisi elementum. Integer tincidunt, dui in bibendum efficitur, odio tellus venenatis turpis, non pharetra lectus arcu eu elit. Sed gravida erat eu metus aliquet, 
+            a volutpat libero blandit. 
+        </p>
+    </div>
+
+    <div id="adContainer" class="adContainer">
+        <div class="closeAd" onclick="hideDiv()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </div>
+        <a id="adSample"><img src="TaylorSwift.jpg" alt="Mobile Ad Image"></a>
+        <div class="adButtonContainer"><a href="https://shopee.ph"><button class="adButton">LEARN MORE</button></a></div>
+        <p class="adText">Stream Taylor Swift on Spotify</p>
+    </div>
+    <script>
+        // hides the div once the exit is clicked
+        function hideDiv() {
+            var adContainer = document.getElementById("adContainer");
+            adContainer.style.display = "none";
+        }
+        // popup the ad after 5 sec
+        setTimeout(function() {
+            var adContainer = document.getElementById("adContainer");
+            adContainer.style.display = "block";
+        }, 3000);
+        
+    </script>
+</body>
+
+</html>
